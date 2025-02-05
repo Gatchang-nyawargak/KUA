@@ -14,7 +14,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-[#0A1F44] text-white py-10 px-5">
+    <footer className="bg-blue-500 text-white py-10 px-5">
       <div id="contacts" className="flex flex-wrap justify-between items-start mb-10">
         {/* Contact Section */}
         <div className="flex flex-col items-start space-y-4 w-full sm:w-1/2 md:w-1/4 lg:w-1/5">

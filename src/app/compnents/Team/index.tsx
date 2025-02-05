@@ -1,45 +1,3 @@
-// import Card from "../ui/card/Card";
-// import CardContent from "../ui/card/CardContent";
-
-// const Team = () => {
-//   const team = [
-//     {
-//       name: "Emma Simango",
-//       role: "General Manager",
-//       description: "A visionary leader with a strategic mindset and deep understanding of trading and logistics."
-//     },
-//     {
-//       name: "Philip Joseph",
-//       role: "Legal Advisor",
-//       description: "Brings extensive expertise in corporate law and strategic legal guidance, ensuring highest legal standards."
-//     }
-//   ];
-
-//   return (
-//     <section className="py-16 bg-white" id="team">
-//       <div className="container mx-auto px-4">
-//         <h2 className="text-3xl font-bold text-center mb-12">Meet The Team</h2>
-//         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-//           {team.map((member, index) => (
-//             <Card key={index}>
-//               <CardContent className="p-6">
-//                 <div className="text-center">
-//                   <div className="w-32 h-32 bg-gray-200 rounded-full mx-auto mb-4" />
-//                   <h3 className="text-xl font-semibold">{member.name}</h3>
-//                   <p className="text-blue-500 mb-4">{member.role}</p>
-//                   <p className="text-gray-600">{member.description}</p>
-//                 </div>
-//               </CardContent>
-//             </Card>
-//           ))}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Team;
-
 import Card from "../ui/card/Card";
 import CardContent from "../ui/card/CardContent";
 
@@ -60,9 +18,9 @@ const Team = () => {
   ];
 
   return (
-    <section className="py-16 bg-gradient-to-r from-blue-500 to-teal-400" id="team">
+    <section className="py-16" id="team">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-white mb-12">Meet The Team</h2>
+        <h2 className="text-4xl font-bold text-center text-gray-800 mb-12 tracking-wide">Meet The Team</h2>
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {team.map((member, index) => (
             <Card 

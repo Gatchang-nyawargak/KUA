@@ -11,7 +11,7 @@ const CoreValues = () => {
     },
     {
       title: "Excellence",
-      description: "We are committed to delivering products and services of the highest quality.",
+      description: "We are committed to delivering innovative and products and services of the highest quality..",
       icon: <Star className="w-10 h-10 text-yellow-500" />,
     },
     {
