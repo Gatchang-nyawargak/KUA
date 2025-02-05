@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Card from "../ui/card/Card";
 import CardContent from "../ui/card/CardContent";
 
@@ -7,13 +8,13 @@ const Team = () => {
       name: "Emma Simango",
       role: "General Manager",
       description: "A visionary leader with a strategic mindset and deep understanding of trading and logistics.",
-      imageUrl: "/images/emma.jpg" // Replace with actual image URLs
+      imageUrl: "/images/emma.jpg"
     },
     {
       name: "Philip Joseph",
       role: "Legal Advisor",
       description: "Brings extensive expertise in corporate law and strategic legal guidance, ensuring highest legal standards.",
-      imageUrl: "/images/philip.jpg" // Replace with actual image URLs
+      imageUrl: "/images/philip.jpg"
     }
   ];
 
@@ -29,12 +30,13 @@ const Team = () => {
             >
               <CardContent className="p-6">
                 <div className="text-center">
-                  {/* Profile Image with smooth transitions */}
-                  <div className="w-32 h-32 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden shadow-xl transition-all duration-300 transform hover:scale-105">
-                    <img 
+                  {/* Profile Image */}
+                  <div className="relative w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden shadow-xl transition-all duration-300 transform hover:scale-105">
+                    <Image 
                       src={member.imageUrl} 
                       alt={member.name} 
-                      className="w-full h-full object-cover"
+                      layout="fill"
+                      objectFit="cover"
                     />
                   </div>
                   <h3 className="text-2xl font-semibold text-gray-900 mb-2">{member.name}</h3>
@@ -51,3 +53,4 @@ const Team = () => {
 };
 
 export default Team;
+

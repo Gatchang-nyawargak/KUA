@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Navbar from "./compnents/Navbar";
 import Landingpage from "./compnents/Landingpage";
 import About from "./compnents/About";

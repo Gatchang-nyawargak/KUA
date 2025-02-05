@@ -1,5 +1,5 @@
-// Card.tsx
 import React from 'react';
+import Image from 'next/image';
 
 interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
   title?: string;
@@ -20,7 +20,11 @@ const Card = ({
 }: CardProps) => {
   return (
     <div className={`bg-white rounded-lg shadow-md overflow-hidden ${className}`} {...props}>
-      {imageUrl && <img src={imageUrl} alt={title || ''} className="w-full h-48 object-cover" />}
+      {imageUrl && (
+        <div className="relative w-full h-48">
+          <Image src={imageUrl} alt={title || ''} layout="fill" objectFit="cover" />
+        </div>
+      )}
       {(title || description) && (
         <div className="p-4">
           {title && <h2 className="text-xl font-semibold text-gray-900">{title}</h2>}
@@ -33,7 +37,4 @@ const Card = ({
   );
 };
 
-// CardContent.tsx
-
-
-export default Card ;
+export default Card;
