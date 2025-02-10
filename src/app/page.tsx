@@ -5,6 +5,9 @@ import Footer from "./compnents/Footer";
 import Services from "./compnents/Services";
 import Team from "./compnents/Team";
 import CoreValues from "./compnents/CoreValues";
+import ProductGrid from "./compnents/Products";
+import Testimonials from "./compnents/Testimonial";
+import NewsletterSubscription from "./compnents/NewsletterSubscription";
 
 
 export default function Home() {
@@ -15,7 +18,10 @@ export default function Home() {
       <About/>
       <CoreValues/>
       <Services/>
+      <ProductGrid/>
+      <Testimonials/>
       <Team/>
+      <NewsletterSubscription/>
       <Footer/>
     </div>
   );

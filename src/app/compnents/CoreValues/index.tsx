@@ -1,23 +1,23 @@
 import Card from "../ui/card/Card";
 import CardContent from "../ui/card/CardContent";
-import { ShieldCheck, Star, Users } from "lucide-react";
+import { FaShieldAlt, FaStar, FaUsers } from "react-icons/fa";
 
 const CoreValues = () => {
   const values = [
     {
       title: "Integrity",
       description: "Our professional employees adhere to the highest ethical standards in all business dealings.",
-      icon: <ShieldCheck className="w-10 h-10 text-blue-500" />,
+      icon: <FaShieldAlt className="w-10 h-10 text-blue-500" />,
     },
     {
       title: "Excellence",
-      description: "We are committed to delivering innovative and products and services of the highest quality..",
-      icon: <Star className="w-10 h-10 text-yellow-500" />,
+      description: "We are committed to delivering innovative and products and services of the highest quality.",
+      icon: <FaStar className="w-10 h-10 text-blue-500" />,
     },
     {
       title: "Community Focus",
       description: "We actively contribute to the positive development of the communities in which we operate.",
-      icon: <Users className="w-10 h-10 text-green-500" />,
+      icon: <FaUsers className="w-10 h-10 text-blue-500" />,
     },
   ];
 

@@ -1,21 +1,21 @@
 import CardContent from "../ui/card/CardContent";
 import Card from "../ui/card/Card";
-import { Package, Truck, Monitor } from "lucide-react";
+import { FaBox, FaTruck, FaDesktop } from "react-icons/fa";
 
 const Services = () => {
   const services = [
     {
-      icon: <Package className="w-12 h-12 text-blue-500 mb-4" />,
+      icon: <FaBox className="w-12 h-12 text-blue-500 mb-4" />, 
       title: "Procurement & Supply",
       items: ["Health Equipment", "Health Promotion Products", "Food Supplies"]
     },
     {
-      icon: <Truck className="w-12 h-12 text-blue-500 mb-4" />,
+      icon: <FaTruck className="w-12 h-12 text-blue-500 mb-4" />,
       title: "Logistics Management",
       items: ["End-to-end Procurement", "Emergency Services", "Humanitarian Contexts"]
     },
     {
-      icon: <Monitor className="w-12 h-12 text-blue-500 mb-4" />,
+      icon: <FaDesktop className="w-12 h-12 text-blue-500 mb-4" />,
       title: "Rental Solutions",
       items: ["Vehicle Rentals", "IT Equipment", "Short to Long-term Options"]
     }

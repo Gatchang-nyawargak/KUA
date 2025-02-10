@@ -13,7 +13,7 @@ const About = () => {
             <Card className="transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-semibold text-gray-900 mb-4">Our Mission</h3>
-                <p className="text-gray-700">
+                <p className="text-gray-600">
                   At De South Ltd, we stand as a global entity committed to fulfilling the
                   unique needs of our clientele. Our core strength is in delivering
                   exceptional, personalized services that set us apart.
