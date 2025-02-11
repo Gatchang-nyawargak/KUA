@@ -4,22 +4,22 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Landingpage = () => {
-  // Array of image paths – add as many images as you like
+  // Array of image paths
   const images = [
     "/images/1.jpg",
     "/images/5.jpg",
     "/images/3.jpg",
-    "/images/4.jpg"
+    "/images/4.jpg",
   ];
 
   // State to track the current image index
   const [currentIndex, setCurrentIndex] = React.useState(0);
 
-  // Change the background image every 2 seconds
+  // Change the background image every 3 seconds
   React.useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 2000);
+    }, 3000);
     return () => clearInterval(interval);
   }, [images.length]);
 
@@ -30,26 +30,28 @@ const Landingpage = () => {
         <Image 
           src={images[currentIndex]} 
           alt="Landing Image" 
-          layout="fill" 
-          objectFit="cover" 
+          fill
+          style={{ objectFit: "cover" }} 
+          className="transition-opacity duration-1000 ease-in-out"
         />
       </div>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-  
+      <div className="absolute inset-0 bg-black bg-opacity-70"></div>
+
       {/* Content */}
-      <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center px-4">
-        <h1 className="text-5xl font-bold mb-4 animate__animated animate__fadeInUp text-[#FFB000]">
+      <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center px-6">
+        <h1 className="text-4xl md:text-6xl font-extrabold tracking-wide mb-6 animate__animated animate__fadeInUp text-[#FFB000]">
           Empowering Futures, Enriching Lives
         </h1>
-        <p className="text-xl animate__animated animate__fadeInUp animate__delay-1s">
-          At De South Ltd is a network of women with a goal to provide top-notch products and exceptional customer service.<br />
-          We take pride in delivering customized high-quality products at the right size and prize
+        <p className="text-lg md:text-xl max-w-2xl animate__animated animate__fadeInUp animate__delay-1s leading-relaxed font-light text-gray-300">
+          De South Ltd provides premium procurement, logistics, and rental solutions. 
+          Specializing in emergency and humanitarian needs, we are committed to delivering 
+          excellence, integrity, and innovation in every service.
         </p>
-        <Link href="#products" passHref>
-          <button className="px-6 py-3 mt-8 md:mt-10 text-base md:text-lg bg-blue-600 text-white rounded-full hover:bg-blue-700 transition duration-300 font-nunito">
-            Explore
+        <Link href="#services">
+          <button className="px-8 py-3 mt-8 text-lg font-semibold bg-gradient-to-r from-[#0052D4] via-[#4364F7] to-[#6FB1FC] rounded-full shadow-md hover:scale-105 transition-transform duration-300 animate__animated animate__fadeInUp animate__delay-2s">
+            Explore Our Services
           </button>
         </Link>
       </div>
@@ -58,4 +60,3 @@ const Landingpage = () => {
 };
 
 export default Landingpage;
-

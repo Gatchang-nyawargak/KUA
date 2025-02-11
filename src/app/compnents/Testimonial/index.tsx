@@ -56,16 +56,15 @@ const Testimonials: React.FC = () => {
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
-              className="bg-white p-6 rounded-lg shadow-lg"
+              className="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl"
             >
               <div className="flex items-center mb-4">
                 <div className="relative w-16 h-16 mr-4">
                   <Image
                     src={testimonial.image}
                     alt={testimonial.customerName}
-                    layout="fill"
-                    objectFit="cover"
-                    className="rounded-full"
+                    fill
+                    className="rounded-full object-cover"
                   />
                 </div>
                 <div>
@@ -77,9 +76,7 @@ const Testimonials: React.FC = () => {
                   </p>
                 </div>
               </div>
-              <p className="text-gray-700 italic">
-                "{testimonial.feedback}"
-              </p>
+              <p className="text-gray-700 italic">"{testimonial.feedback}"</p>
             </div>
           ))}
         </div>
