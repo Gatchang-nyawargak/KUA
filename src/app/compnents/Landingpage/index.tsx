@@ -12,6 +12,9 @@ const Landingpage = () => {
     "/images/4.jpg",
   ];
 
+  // Fallback image in case an image is missing
+  const fallbackImage = "/images/placeholder.jpg"; // Add this image to `public/images/`
+
   // State to track the current image index
   const [currentIndex, setCurrentIndex] = React.useState(0);
 
@@ -33,6 +36,7 @@ const Landingpage = () => {
           fill
           style={{ objectFit: "cover" }} 
           className="transition-opacity duration-1000 ease-in-out"
+          onError={(e) => (e.currentTarget.src = fallbackImage)}
         />
       </div>
 

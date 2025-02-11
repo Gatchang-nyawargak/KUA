@@ -1,20 +1,19 @@
 import type { Metadata } from "next";
-import { Geist as GeistSans, Geist_Mono as GeistMono } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import "animate.css";
 
-const geistSans = GeistSans({
+const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
 
-const geistMono = GeistMono({
+const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.desouthcoltd.com"),
   title: "DE SOUTH CO. LTD",
   description:
     "DE SOUTH CO. LTD is a leading provider of top-notch products and services in procurement, logistics, IT equipment, rental solutions, and more. We empower futures and enrich lives with exceptional service.",
@@ -53,7 +52,9 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
         {children}
       </body>
     </html>
