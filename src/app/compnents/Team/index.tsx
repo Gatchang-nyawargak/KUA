@@ -10,7 +10,7 @@ const Team = () => {
       name: "Mr. Kaoma Bienvenu",
       role: "Founder & Director, Humanitarian Activist, Mentor, Web Developer, Proposal Writer",
       description: "Dedicated to empowering communities through technology and humanitarian initiatives.",
-      imageUrl: "/images/kaoma.jpg",
+      imageUrl: "/images/kaoma.jpeg",
     },
     {
       name: "Ms. Nyawargak Gatchang",
