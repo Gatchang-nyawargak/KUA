@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 
-const NewsletterSubscription: React.FC = () => {
+const KuaNewsletterSubscription: React.FC = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [error, setError] = useState(false);
@@ -17,21 +17,20 @@ const NewsletterSubscription: React.FC = () => {
       return;
     }
 
-    // Here, you could call an API to subscribe the email
-    // For now, we'll simulate a successful subscription
-    setMessage("Thank you for subscribing!");
+    // Simulate a successful subscription
+    setMessage("Thank you for subscribing to KUA Initiative updates!");
     setError(false);
     setEmail("");
   };
 
   return (
-    <div className="py-12 bg-gray-100">
+    <div className="py-12 bg-blue-100">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-3xl font-bold text-gray-800 mb-4">
-          Subscribe to our Newsletter
+        <h2 className="text-3xl font-bold text-blue-800 mb-4">
+          Stay Connected with KUA Initiative
         </h2>
-        <p className="text-gray-600 mb-6">
-          Stay updated with the latest news and exclusive offers.
+        <p className="text-blue-700 mb-6">
+          Subscribe to receive updates on our programs, community projects, and impact stories.
         </p>
         <form
           onSubmit={handleSubmit}
@@ -42,7 +41,7 @@ const NewsletterSubscription: React.FC = () => {
             placeholder="Enter your email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:border-blue-500 w-full sm:w-auto"
+            className="px-4 py-3 rounded-full border border-blue-400 focus:outline-none focus:border-blue-600 w-full sm:w-auto"
             required
           />
           <button
@@ -53,7 +52,7 @@ const NewsletterSubscription: React.FC = () => {
           </button>
         </form>
         {message && (
-          <p className={`mt-4 ${error ? "text-red-500" : "text-green-500"}`}>
+          <p className={`mt-4 ${error ? "text-red-500" : "text-blue-500"}`}>
             {message}
           </p>
         )}
@@ -62,4 +61,4 @@ const NewsletterSubscription: React.FC = () => {
   );
 };
 
-export default NewsletterSubscription;
+export default KuaNewsletterSubscription;

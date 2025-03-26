@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <nav className="flex p-2 bg-white justify-between px-3 items-center w-full shadow-md sticky top-0 z-50">
       <Image
-        src="/images/logo.png"
+        src="/images/logo.jpeg"
         width={80}
         height={60}
         alt="Logo"

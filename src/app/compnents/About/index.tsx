@@ -9,27 +9,31 @@ const About = () => {
           About Us
         </h2>
         <div className="grid md:grid-cols-2 gap-8">
+          {/* Our Mission */}
           <div className="animate-slide-in transition-all duration-700 ease-out transform">
             <Card className="transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-semibold text-gray-900 mb-4">Our Mission</h3>
                 <p className="text-gray-600">
-                  At De South Ltd, we stand as a global entity committed to fulfilling the
-                  unique needs of our clientele. Our core strength is in delivering
-                  exceptional, personalized services that set us apart.
+                  At KUA, our mission is to empower communities through impactful programs, 
+                  sustainable initiatives, and meaningful partnerships. We are dedicated to 
+                  creating opportunities, fostering growth, and uplifting lives through 
+                  education, economic development, and social innovation.
                 </p>
               </CardContent>
             </Card>
           </div>
 
+          {/* Our Vision */}
           <div className="animate-slide-in transition-all duration-700 ease-out transform delay-200">
             <Card className="transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-semibold text-gray-900 mb-4">Our Vision</h3>
                 <p className="text-gray-700">
-                  DE SOUTH aims to redefine the trading and logistics industry, setting new
-                  standards in excellence, innovation, and integrity, with a vision to lead
-                  and shape the future through groundbreaking solutions.
+                  Our vision is to build a thriving, self-sufficient society where individuals 
+                  have access to quality education, economic opportunities, and sustainable 
+                  development. Through collaboration and innovation, we strive to shape a 
+                  better future for generations to come.
                 </p>
               </CardContent>
             </Card>

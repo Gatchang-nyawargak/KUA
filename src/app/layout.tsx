@@ -14,24 +14,23 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "DE SOUTH CO. LTD",
+  title: "KUA Initiative",
   description:
-    "DE SOUTH CO. LTD is a leading provider of top-notch products and services in procurement, logistics, IT equipment, rental solutions, and more. We empower futures and enrich lives with exceptional service.",
+    "KUA Initiative is dedicated to empowering refugees and host communities through education, livelihood programs, GBV awareness, and environmental sustainability projects in Kalobeyei, Turkana County.",
   icons: {
-    icon: "/images/logo.png",
+    icon: "/images/logo.jpeg",
   },
   openGraph: {
-    title: "DE SOUTH CO. LTD",
+    title: "KUA Initiative",
     description:
-      "DE SOUTH CO. LTD is a leading provider of top-notch products and services in procurement, logistics, IT equipment, rental solutions, and more. We empower futures and enrich lives with exceptional service.",
-    url: "https://www.desouthcoltd.com",
-    siteName: "DE SOUTH CO. LTD",
+      "KUA Initiative is dedicated to empowering refugees and host communities through education, livelihood programs, GBV awareness, and environmental sustainability projects in Kalobeyei, Turkana County.",
+    siteName: "KUA Initiative",
     images: [
       {
-        url: "/images/og-image.jpg",
+        url: "/images/images/logo.jpeg",
         width: 1200,
         height: 630,
-        alt: "DE SOUTH CO. LTD",
+        alt: "KUA Initiative",
       },
     ],
     locale: "en_US",
@@ -39,13 +38,14 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "DE SOUTH CO. LTD",
+    title: "KUA Initiative",
     description:
-      "DE SOUTH CO. LTD is a leading provider of top-notch products and services in procurement, logistics, IT equipment, rental solutions, and more. We empower futures and enrich lives with exceptional service.",
-    images: ["/images/og-image.jpg"],
-    creator: "@desouthcoltd",
+      "KUA Initiative supports refugees and host communities in Kalobeyei through education, business training, and advocacy programs.",
+    images: ["/images/kua-og-image.jpg"],
+    creator: "@kua_initiative",
   },
 };
+
 
 export default function RootLayout({
   children,

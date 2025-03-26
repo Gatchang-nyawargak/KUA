@@ -1,23 +1,38 @@
 import Card from "../ui/card/Card";
 import CardContent from "../ui/card/CardContent";
-import { FaShieldAlt, FaStar, FaUsers } from "react-icons/fa";
+import { FaHandshake, FaBalanceScale, FaHardHat, FaShieldAlt, FaLock, FaUsers } from "react-icons/fa";
 
 const CoreValues = () => {
   const values = [
     {
-      title: "Integrity",
-      description: "Our professional employees adhere to the highest ethical standards in all business dealings.",
-      icon: <FaShieldAlt className="w-10 h-10 text-blue-500" />,
+      title: "Respect",
+      description: "We collaborate with international agencies, governments, and stakeholders, avoiding competition and focusing on community empowerment.",
+      icon: <FaHandshake className="w-10 h-10 text-blue-600" />,
     },
     {
-      title: "Excellence",
-      description: "We are committed to delivering innovative and products and services of the highest quality.",
-      icon: <FaStar className="w-10 h-10 text-blue-500" />,
+      title: "Responsibility",
+      description: "We take responsibility for assets, our team, and the environment, ensuring ethical stewardship in all dealings.",
+      icon: <FaBalanceScale className="w-10 h-10 text-blue-600" />,
     },
     {
-      title: "Community Focus",
-      description: "We actively contribute to the positive development of the communities in which we operate.",
-      icon: <FaUsers className="w-10 h-10 text-blue-500" />,
+      title: "Hard Work",
+      description: "We embrace diversity and work tirelessly to bring positive change to our community, breaking language and status barriers.",
+      icon: <FaHardHat className="w-10 h-10 text-blue-600" />,
+    },
+    {
+      title: "Trust",
+      description: "We are dedicated to earning and maintaining the trust of our partners through transparency and reliability.",
+      icon: <FaShieldAlt className="w-10 h-10 text-blue-600" />,
+    },
+    {
+      title: "Confidentiality",
+      description: "We uphold strict confidentiality measures to protect the privacy and security of individuals and their data.",
+      icon: <FaLock className="w-10 h-10 text-blue-600" />,
+    },
+    {
+      title: "Teamwork",
+      description: "We work as one team, embracing our diverse membership to drive impactful community change.",
+      icon: <FaUsers className="w-10 h-10 text-blue-600" />,
     },
   ];
 

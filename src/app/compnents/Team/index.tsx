@@ -1,32 +1,50 @@
-import Image from 'next/image';
+"use client";
+import React from "react";
+import Image from "next/image";
 import Card from "../ui/card/Card";
 import CardContent from "../ui/card/CardContent";
 
 const Team = () => {
   const team = [
     {
-      name: "Emma Simango",
-      role: "General Manager",
-      description:
-        "A visionary leader with a strategic mindset and deep understanding of trading and logistics.",
-      imageUrl: "/images/emma.jpg",
+      name: "Mr. Kaoma Bienvenu",
+      role: "Founder & Director, Humanitarian Activist, Mentor, Web Developer, Proposal Writer",
+      description: "Dedicated to empowering communities through technology and humanitarian initiatives.",
+      imageUrl: "/images/kaoma.jpg",
     },
     {
-      name: "Philip Joseph",
-      role: "Legal Advisor",
-      description:
-        "Brings extensive expertise in corporate law and strategic legal guidance, ensuring highest legal standards.",
-      imageUrl: "/images/philip.jpg",
+      name: "Ms. Nyawargak Gatchang",
+      role: "Project Manager, Full Stack Developer, AkiraChix Alumnus",
+      description: "Passionate about leveraging technology to create impact-driven solutions for communities.",
+      imageUrl: "/images/warga.jpg",
     },
+    {
+      name: "Mr. Abwine Yves",
+      role: "AI Engineer, Web Designer, Humanitarian, Community Change-Maker, Entrepreneur",
+      description: "Bringing AI innovation and community-driven solutions to humanitarian challenges.",
+      imageUrl: "/images/eve.png",
+    },
+    // {
+    //   name: "Ms. Monica Gyluot",
+    //   role: "GBV Coordinator, Therapist, Research Assistant",
+    //   description: "Advocating for gender equality, mental health, and social justice within refugee communities.",
+    //   imageUrl: "/images/monica.jpg",
+    // },
+    // {
+    //   name: "Ms. Peace Emmanuel",
+    //   role: "Youth Advocate, Assistant Project Manager",
+    //   description: "Committed to empowering young people through education, mentorship, and advocacy.",
+    //   imageUrl: "/images/peace.jpg",
+    // },
   ];
 
   return (
     <section className="py-16" id="team">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center text-gray-800 mb-12 tracking-wide">
-          Meet The Team
+          Meet Our Team
         </h2>
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {team.map((member, index) => (
             <Card
               key={index}

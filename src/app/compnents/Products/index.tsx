@@ -4,14 +4,14 @@ import Image from "next/image";
 import Card from "../ui/card/Card";
 import CardContent from "../ui/card/CardContent";
 
-interface Product {
+interface Initiative {
   id: number;
   image: string;
   title: string;
   description: string;
 }
 
-const ProductCard: React.FC<Product> = ({ image, title, description }) => {
+const InitiativeCard: React.FC<Initiative> = ({ image, title, description }) => {
   const [isExpanded, setIsExpanded] = React.useState(false);
 
   const handleToggle = () => {
@@ -19,7 +19,7 @@ const ProductCard: React.FC<Product> = ({ image, title, description }) => {
   };
 
   return (
-    <Card className="relative overflow-hidden rounded-lg bg-white shadow-md hover:shadow-xl transition-shadow duration-300">
+    <Card className="relative overflow-hidden rounded-lg bg-white shadow-md hover:shadow-xl transition-shadow duration-300 ">
       <div className="aspect-square overflow-hidden">
         <Image 
           src={image} 
@@ -51,59 +51,61 @@ const ProductCard: React.FC<Product> = ({ image, title, description }) => {
   );
 };
 
-const ProductGrid: React.FC = () => {
-  const products: Product[] = [
+const InitiativeGrid: React.FC = () => {
+  const initiatives: Initiative[] = [
     {
       id: 1,
-      image: "/images/6.jpg",
-      title: "Natural Honey",
-      description: "Honey is rich in nutrients and antioxidants, has antibacterial properties, and can play a role in diabetes management as part of a balanced diet."
+      image: "/images/ICT.jpeg",
+      title: "Education",
+      description: "We advocate for refugee access to higher education by providing digital literacy and linking them to scholarship opportunities. This helps them find online opportunities and create a presence in the digital space."
     },
     {
       id: 2,
-      image: "/images/wheat.jpeg",
-      title: "Traditional Organic White Flour",
-      description: "Introducing Thames Organic's Traditional Organic White Flour, a premium product crafted with care to bring you the essence of wholesome goodness."
+      image: "/images/education.JPG",
+      title: "Livelihood",
+      description: "We collaborate with GRYN Team & WRC to provide business skills to refugee and host community entrepreneurs, helping them expand and sustain their businesses."
     },
     {
       id: 3,
-      image: "/images/8.jpg",
-      title: "Vehicle Rentals",
-      description: "Rent with confidence! Our flexible booking options and commitment to no hidden fees make renting a car simple and stress-free. Secure your car rental at the best price today and experience worry-free travel."
+      image: "/images/genderbase.JPG",
+      title: "Gender-Based Violence (GBV) Prevention",
+      description: "Our initiatives focus on community campaigns, school programs, and training sessions to raise awareness about GBV, providing mental health support, legal aid, and medical services for survivors."
     },
     {
       id: 4,
-      image: "/images/It.jpg",
-      title: "IT Equipments",
-      description: "Equip your business for success with our comprehensive range of IT equipment. From powerful servers and reliable networking solutions to high-performance workstations and user-friendly peripherals, we offer everything you need to stay competitive."
+      image: "/images/livelihood.JPG",
+      title: "Protection",
+      description: "We work with stakeholders to promote child disability protection projects, raising awareness about inclusion and disability rights within families, schools, and communities."
     },
     {
       id: 5,
-      image: "/images/10.jpg",
-      title: "Pastry Flour",
-      description: "Ideal for pie crusts, biscuits, cookies, French pastries, and other flaky baked goods. It's often used when low gluten development and a tender or flaky texture are desired."
+      image: "/images/enviroment.jpeg",
+      title: "Environment",
+      description: "Our environmental initiative, the Kalobeyei Green Project, focuses on planting and distributing 4000 neem trees in the Kalobeyei settlement and host community to combat climate change."
     },
     {
       id: 6,
-      image: "/images/11.jpg",
-      title: "Bread Flour",
-      description: "Bread flour is best for baking yeast breads because the high protein content facilitates strong gluten development. The strong and elastic dough structure helps trap air, producing an airy and chewy texture in the baked bread."
+      image: "/images/mentor.jpeg",
+      title: "Mentorship for Girls",
+      description: "We provide mentorship programs for young girls in Kalobeyei, offering guidance in education, leadership, and career development. Through mentorship, we empower girls with skills, confidence, and opportunities to break barriers and achieve their dreams."
     }
   ];
 
   return (
-    <div className="container mx-auto px-4 py-8" id="products">
-      <h2 className="text-4xl font-bold text-center text-gray-800 mb-12 tracking-wide">
-        Our Products
-      </h2>
+    <section className="py-16 bg-gray-50" id="services">
+      <div className="container mx-auto px-6">
+        <h2 className="text-4xl font-bold text-center text-gray-800 mb-12 tracking-wide">
+          What We Do
+        </h2>
+  
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {products.map(product => (
-          <ProductCard key={product.id} {...product} />
+        {initiatives.map(initiative => (
+          <InitiativeCard key={initiative.id} {...initiative} />
         ))}
       </div>
     </div>
+     </section>
   );
 };
 
-export default ProductGrid;
-
+export default InitiativeGrid;
