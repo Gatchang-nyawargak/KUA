@@ -24,24 +24,13 @@ const Team = () => {
       description: "Bringing AI innovation and community-driven solutions to humanitarian challenges.",
       imageUrl: "/images/eve.png",
     },
-    // {
-    //   name: "Ms. Monica Gyluot",
-    //   role: "GBV Coordinator, Therapist, Research Assistant",
-    //   description: "Advocating for gender equality, mental health, and social justice within refugee communities.",
-    //   imageUrl: "/images/monica.jpg",
-    // },
-    // {
-    //   name: "Ms. Peace Emmanuel",
-    //   role: "Youth Advocate, Assistant Project Manager",
-    //   description: "Committed to empowering young people through education, mentorship, and advocacy.",
-    //   imageUrl: "/images/peace.jpg",
-    // },
+  
   ];
 
   return (
     <section className="py-16" id="team">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-gray-800 mb-12 tracking-wide">
+        <h2 className="text-4xl font-bold text-center text-blue-300 mb-12 tracking-wide">
           Meet Our Team
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
