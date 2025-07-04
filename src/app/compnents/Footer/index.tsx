@@ -24,11 +24,11 @@ const Footer = () => {
               <Phone size={20} />
               <span>+254703415618 </span>
             </a>
-            <a href="https://wa.me/254700000000" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-white hover:text-gray-400">
+            <a href="https://wa.me/+254703415618" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-white hover:text-gray-400">
               <FaWhatsapp size={20} />
               <span>+254703415618 </span>
             </a>
-            <a href="mailto:info@kua.org" className="flex items-center space-x-2 text-white hover:text-gray-400">
+            <a href="mailto:Kua.initiative@gmail.com" className="flex items-center space-x-2 text-white hover:text-gray-400">
               <Mail size={20} />
               <span>Kua.initiative@gmail.com</span>
             </a>
