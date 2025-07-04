@@ -20,17 +20,17 @@ const Footer = () => {
         <div className="flex flex-col items-start mb-6 w-full sm:w-1/2 md:w-1/4 lg:w-1/5">
           <h3 className="mb-4 text-lg font-bold text-[26px]">Contact Us</h3>
           <div className="flex flex-col items-start space-y-4">
-            <a href="tel:+254700000000" className="flex items-center space-x-2 text-white hover:text-gray-400">
+            <a href="tel:+254703415618" className="flex items-center space-x-2 text-white hover:text-gray-400">
               <Phone size={20} />
-              <span>+254 700 000 000</span>
+              <span>+254703415618 </span>
             </a>
             <a href="https://wa.me/254700000000" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-white hover:text-gray-400">
               <FaWhatsapp size={20} />
-              <span>+254 700 000 000</span>
+              <span>+254703415618 </span>
             </a>
             <a href="mailto:info@kua.org" className="flex items-center space-x-2 text-white hover:text-gray-400">
               <Mail size={20} />
-              <span>info@kua.org</span>
+              <span>Kua.initiative@gmail.com</span>
             </a>
             <a href="https://www.google.com/maps/search/?api=1&query=Kalobeyei, Turkana, Kenya" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-white hover:text-gray-400">
               <MapPin size={20} />
