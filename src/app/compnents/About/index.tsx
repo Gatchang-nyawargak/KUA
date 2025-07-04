@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section className="py-16" id="about">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-white mb-12 tracking-wide">
+        <h2 className="text-4xl font-bold text-center text-blue-300 mb-12 tracking-wide">
           About Us
         </h2>
         <div className="grid md:grid-cols-2 gap-8">
