@@ -30,7 +30,7 @@ const InitiativeCard: React.FC<Initiative> = ({ image, title, description }) => 
         />
       </div>
       <CardContent className="p-4">
-        <h3 className="text-2xl font-semibold mb-4">{title}</h3>
+        <h3 className="text-2xl font-semibold mb-4 text-blue-400">{title}</h3>
         {description.length > 100 ? (
           <>
             <p className="text-gray-600">
