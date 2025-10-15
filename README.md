@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# KUA Monorepo
+
+A monorepo containing both frontend (Next.js) and backend (Node.js) applications with integrated payment system supporting credit cards and M-Pesa.
+
+## Structure
+
+```
+KUA/
+├── apps/
+│   ├── frontend/          # Next.js application
+│   └── backend/           # Node.js Express API
+└── package.json           # Root workspace configuration
+```
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+- Node.js 18+
+- npm
+
+### Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Install all dependencies
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Environment Setup
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Copy backend environment template:
+```bash
+cp apps/backend/.env.example apps/backend/.env
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. Configure your environment variables in `apps/backend/.env`:
+   - Stripe keys for card payments
+   - M-Pesa credentials for mobile payments
 
-## Learn More
+### Development
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+# Start both frontend and backend
+npm run dev
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Or start individually
+npm run dev:frontend  # Frontend only (port 3000)
+npm run dev:backend   # Backend only (port 3001)
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Features
 
-## Deploy on Vercel
+### Payment System
+- **Credit Card Payments**: Integrated with Stripe
+- **M-Pesa Payments**: Direct integration with Safaricom API
+- **Donation Modal**: Floating donate button with payment options
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### API Endpoints
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+#### Stripe Payments
+- `POST /api/payments/stripe/create-intent` - Create payment intent
+- `POST /api/payments/stripe/webhook` - Handle Stripe webhooks
+
+#### M-Pesa Payments  
+- `POST /api/payments/mpesa/initiate` - Initiate STK push
+- `POST /api/payments/mpesa/callback` - Handle M-Pesa callbacks
+
+## Deployment
+
+```bash
+# Build applications
+npm run build
+
+# Start production server
+npm start
+```
+
+## Environment Variables
+
+### Backend (.env)
+```
+PORT=3001
+STRIPE_SECRET_KEY=sk_test_...
+STRIPE_WEBHOOK_SECRET=whsec_...
+MPESA_CONSUMER_KEY=...
+MPESA_CONSUMER_SECRET=...
+MPESA_SHORTCODE=...
+MPESA_PASSKEY=...
+MPESA_ENVIRONMENT=sandbox
+```
