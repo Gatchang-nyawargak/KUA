@@ -12,5 +12,8 @@
     "build": "npm run build --workspace=apps/frontend",
     "build:all": "npm run build --workspace=apps/frontend && npm run build --workspace=apps/backend",
     "start": "npm run start --workspace=apps/frontend"
+  },
+  "dependencies": {
+    "portfinder": "^1.0.38"
   }
 }

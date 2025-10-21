@@ -21,20 +21,21 @@ const getAccessToken = async (): Promise<string> => {
 export const initiateSTKPush = async (phone: string, amount: number, accountReference: string) => {
   const accessToken = await getAccessToken();
   const timestamp = new Date().toISOString().replace(/[^0-9]/g, '').slice(0, -3);
-  const password = Buffer.from(
-    `${process.env.MPESA_SHORTCODE}${process.env.MPESA_PASSKEY}${timestamp}`
-  ).toString('base64');
+  const shortcode = '174379'; // Sandbox shortcode
+  const passkey = 'bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919'; // Sandbox passkey
+  
+  const password = Buffer.from(`${shortcode}${passkey}${timestamp}`).toString('base64');
 
   const payload = {
-    BusinessShortCode: process.env.MPESA_SHORTCODE,
+    BusinessShortCode: shortcode,
     Password: password,
     Timestamp: timestamp,
     TransactionType: 'CustomerPayBillOnline',
     Amount: amount,
     PartyA: phone,
-    PartyB: process.env.MPESA_SHORTCODE,
+    PartyB: shortcode,
     PhoneNumber: phone,
-    CallBackURL: `${process.env.BASE_URL}/api/payments/mpesa/callback`,
+    CallBackURL: 'https://mydomain.com/path',
     AccountReference: accountReference,
     TransactionDesc: 'Donation Payment',
   };
