@@ -56,32 +56,32 @@ const InitiativeGrid: React.FC = () => {
     {
       id: 1,
       image: "/images/ICT.jpeg",
-      title: "Education",
-      description: "We advocate for refugee access to higher education by providing digital literacy and linking them to scholarship opportunities. This helps them find online opportunities and create a presence in the digital space."
+      title: "Skill Development",
+      description: "Digital literacy and advocacy for high-quality education"
     },
     {
       id: 2,
-      image: "/images/education.JPG",
-      title: "Livelihood",
-      description: "We collaborate with GRYN Team & WRC to provide business skills to refugee and host community entrepreneurs, helping them expand and sustain their businesses."
+      image: "/images/Girl in Tech.jpeg",
+      title: "Women's Economic Empowerment",
+      description: "Entrepreneurship and sexual reproductive health"
     },
     {
       id: 3,
-      image: "/images/genderbase.JPG",
-      title: "Gender-Based Violence (GBV) Prevention",
-      description: "Our initiatives focus on community campaigns, school programs, and training sessions to raise awareness about GBV, providing mental health support, legal aid, and medical services for survivors."
+      image: "/images/livelihood.JPG",
+      title: "Livelihood",
+      description: "Basic mechanics, driving programs, and entrepreneurship programs"
     },
     {
       id: 4,
-      image: "/images/livelihood.JPG",
-      title: "Protection",
-      description: "We work with stakeholders to promote child disability protection projects, raising awareness about inclusion and disability rights within families, schools, and communities."
+      image: "/images/enviroment.jpeg",
+      title: "Climate Change",
+      description: "Kalobeyei Green Kitchen Garden under the Water Box program"
     },
     {
       id: 5,
-      image: "/images/enviroment.jpeg",
-      title: "Environment",
-      description: "Our environmental initiative, the Kalobeyei Green Project, focuses on planting and distributing 4000 neem trees in the Kalobeyei settlement and host community to combat climate change."
+      image: "/images/genderbase.JPG",
+      title: "Gender-Based Violence (GBV) Prevention",
+      description: "Our initiatives focus on community campaigns, school programs, and training sessions to raise awareness about GBV, providing mental health support, legal aid, and medical services for survivors."
     },
     {
       id: 6,

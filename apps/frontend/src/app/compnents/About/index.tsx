@@ -15,10 +15,7 @@ const About = () => {
               <CardContent className="p-8">
                 <h3 className="text-2xl font-semibold text-gray-900 mb-4">Our Mission</h3>
                 <p className="text-gray-600">
-                  At KUA, our mission is to empower communities through impactful programs, 
-                  sustainable initiatives, and meaningful partnerships. We are dedicated to 
-                  creating opportunities, fostering growth, and uplifting lives through 
-                  education, economic development, and social innovation.
+                  To equip refugees and host communities with relevant skills, create pathways for sustainable livelihoods, and support practical, community-led approaches to environmental resilience.
                 </p>
               </CardContent>
             </Card>
@@ -30,10 +27,7 @@ const About = () => {
               <CardContent className="p-8">
                 <h3 className="text-2xl font-semibold text-gray-900 mb-4">Our Vision</h3>
                 <p className="text-gray-700">
-                  Our vision is to build a thriving, self-sufficient society where individuals 
-                  have access to quality education, economic opportunities, and sustainable 
-                  development. Through collaboration and innovation, we strive to shape a 
-                  better future for generations to come.
+                  A society where refugees and host communities have the skills, opportunities, and supportive environment to build stable and meaningful lives.
                 </p>
               </CardContent>
             </Card>
