@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   description:
     "KUA Initiative is dedicated to empowering refugees and host communities through education, livelihood programs, GBV awareness, and environmental sustainability projects in Kalobeyei, Turkana County.",
   icons: {
-    icon: "/images/logo.jpeg",
+    icon: "/images/logo.png",
   },
   openGraph: {
     title: "KUA Initiative",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     siteName: "KUA Initiative",
     images: [
       {
-        url: "/images/images/logo.jpeg",
+        url: "/images/logo.png",
         width: 1200,
         height: 630,
         alt: "KUA Initiative",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "KUA Initiative",
     description:
       "KUA Initiative supports refugees and host communities in Kalobeyei through education, business training, and advocacy programs.",
-    images: ["/images/kua-og-image.jpg"],
+    images: ["/images/logo.jpeg"],
     creator: "@kua_initiative",
   },
 };
